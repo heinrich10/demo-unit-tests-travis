@@ -1,9 +1,8 @@
 'use strict';
 
-const mocha = require('mocha');
 const chai = require('chai');
 const expect = chai.expect;
-const scrape = require('./index');
+const scrape = require('../lib/scraper');
 
 describe('Temperature Scrapper', function () {
 	it('Should return the temparature', function (done) {
