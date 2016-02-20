@@ -1,6 +1,7 @@
 language: node_js
 node_js:
     - 4.2.3
+sudo: false
 
 notifications:
     email:
@@ -8,6 +9,9 @@ notifications:
 branches:
     only:
         - master
+install:
+    - npm install -g grunt-cli
+    - npm install
 script:
     - npm run lint
     - npm test
