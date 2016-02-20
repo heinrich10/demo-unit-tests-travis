@@ -8,9 +8,9 @@ const scrape = require('../lib/scraper');
 
 describe('Temperature Scrapper', function () {
 	let req;
-	afterEach(function() {
+	afterEach(function () {
 		req.restore();
-	})
+	});
 	it('Should return the temparature', function (done) {
 		req = sinon.stub(request, 'get');
 
