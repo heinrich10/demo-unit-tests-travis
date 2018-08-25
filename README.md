@@ -1,4 +1,4 @@
 # demo-unit-tests
 
-[![Build Status](https://travis-ci.org/AfterShip/demo-unit-tests.svg?branch=master)](https://travis-ci.org/AfterShip/demo-unit-tests)
-[![codecov.io](https://codecov.io/github/AfterShip/demo-unit-tests/coverage.svg?branch=master)](https://codecov.io/github/AfterShip/demo-unit-tests?branch=master)
+[![Build Status](https://travis-ci.org/heinrich10/demo-unit-tests-travis.svg?branch=master)](https://travis-ci.org/heinrich10/demo-unit-tests)
+[![codecov](https://codecov.io/gh/heinrich10/demo-unit-tests-travis/branch/master/graph/badge.svg)](https://codecov.io/gh/heinrich10/demo-unit-tests-travis)
