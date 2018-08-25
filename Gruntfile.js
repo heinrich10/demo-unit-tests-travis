@@ -8,27 +8,27 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		eslint: {
 			options: {
-				configFile: '.eslintrc'
+				configFile: '.eslintrc.js',
 			},
 			target: [
 				'**/*.js',
 				'!**/node_modules/**',
-				'!**/coverage/**'
-			]
+				'!**/coverage/**',
+			],
 		},
 
 		istanbul_check_coverage: {
 			default: {
 				options: {
-					coverageFolder: 'coverage'
-				}
-			}
+					coverageFolder: 'coverage',
+				},
+			},
 		},
 
 		mocha_istanbul: {
 			coverage: {
 				src: [
-					'test/*.js'
+					'test/*.js',
 				],
 				options: {
 					coverage: true,
@@ -36,11 +36,11 @@ module.exports = function (grunt) {
 					istanbulOptions: [
 						'--include-all-sources',
 						'-x', 'Gruntfile.js',
-						'-x', 'index.js'
-					]
-				}
-			}
-		}
+						'-x', 'index.js',
+					],
+				},
+			},
+		},
 	});
 
 	grunt.event.on('coverage', function (lconvFileContents, done) {

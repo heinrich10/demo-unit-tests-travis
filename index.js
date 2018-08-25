@@ -1,3 +1,5 @@
+/* eslint no-console: off */
+
 'use strict';
 
 const scraper = require('./lib/scraper');

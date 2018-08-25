@@ -1,7 +1,10 @@
+/* global describe, afterEach, it */
+
 'use strict';
+
 const request = require('request');
 const chai = require('chai');
-const expect = chai.expect;
+const {expect} = chai;
 const sinon = require('sinon');
 const scrape = require('../lib/scraper');
 
@@ -26,6 +29,7 @@ describe('Temperature Scrapper', function () {
 
 		scrape(function (err, temp) {
 			expect(err).to.be.instanceof(Error);
+			expect(temp).to.be.undefined;
 			done();
 		});
 		req.yield(null, {statusCode: 400}, '{"main":{"temp": 273}}');
@@ -35,6 +39,7 @@ describe('Temperature Scrapper', function () {
 
 		scrape(function (err, temp) {
 			expect(err).to.be.instanceof(Error);
+			expect(temp).to.be.undefined;
 			done();
 		});
 		req.yield(new Error());
