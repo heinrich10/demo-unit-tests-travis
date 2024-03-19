@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "ioredis": "^4.0.0",
+    "ioredis": "^4.27.8",
     "request": "^2.88.2"
   },
   "devDependencies": {
